@@ -1,2 +1,2 @@
 ### Hi there 👋
-In 2022 I founded Nuntio to build an open-source backend and deployment platform on Kubernetes. 
+I am a college drop-out, running enthusiasts, and co-founder of Nuntio, an open-source backend and deployment platform on Kubernetes.
