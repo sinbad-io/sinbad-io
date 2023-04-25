@@ -3,182 +3,149 @@
   <div xmlns="http://www.w3.org/1999/xhtml">
     <style>
       .body {
-        height: 400px;
-        width: 100%;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        animation: border 5s linear infinite;
-        background-size: 200% 200%;
-        background: url("background.jpeg");
-        background-position: 0 0;
+        background: black;
+        font-family: "Oswald", sans-serif;
+        font-style: italic;
       }
 
-      h1 {
-        font-size: 3.5rem;
-        font-weight: 800;
-        font-family: "Open Sans", sans-serif;
-        text-align: center;
+      .container {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 50%;
       }
-      h1 a {
-        display: block;
+
+      .glitch {
+        color: rgb(223, 191, 191);
+        position: relative;
+        font-size: 9vw;
+        // margin: 70px 200px;
+        animation: glitch 5s 5s infinite;
       }
-      h1 a span {
+
+      .glitch::before {
+        content: attr(data-text);
+        position: absolute;
+        left: -2px;
+        text-shadow: -5px 0 magenta;
+        background: black;
         overflow: hidden;
-        transition: transform 0.25s cubic-bezier(0.5, 0, 0.25, 1.25);
-        display: block;
-      }
-      h1 a span em {
-        display: block;
-      }
-      h1 a span:nth-child(1) {
-        color: var(--color-main);
-        margin-bottom: 6px;
-        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.3) -1s 1;
-      }
-      h1 a span:nth-child(1) em {
-        margin-top: 30px;
-        line-height: 0rem;
-        margin-bottom: -10px;
-      }
-      h1 a span:nth-child(2) {
-        color: var(--color-primary);
-        margin-bottom: 6px;
-        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.2) -0.9s 1;
-      }
-      h1 a span:nth-child(2) em {
-        margin-top: -6px;
-        line-height: 1rem;
-      }
-      h1 a span:nth-child(3) {
-        color: var(--color-secondary);
-        animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.1) -0.8s 1;
-      }
-      h1 a span:nth-child(3) em {
-        margin-top: -36px;
-        line-height: 3rem;
-      }
-      h1 a:hover span,
-      h1 a:focus span {
-        transition: transform 0.125s cubic-bezier(0.5, 0, 0.25, 2.5);
-      }
-      h1 a:hover span:nth-child(1),
-      h1 a:focus span:nth-child(1) {
-        transform: translateX(1vw);
-      }
-      h1 a:hover span:nth-child(3),
-      h1 a:focus span:nth-child(3) {
-        transform: translateX(-1vw);
+        top: 0;
+        animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
       }
 
-      .items {
-        margin-top: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      ul {
-        font-size: 16px;
-        line-height: 26px;
-        color: var(--color-main);
-        font-weight: 700;
-        font-family: "Open Sans", sans-serif;
-      }
-      ul li {
-        display: flex;
-        letter-spacing: 0.125vw;
-      }
-      ul li a {
-        margin-left: 5px;
-      }
-      ul li a:hover,
-      ul li a:focus {
-        color: var(--color-link-active);
-      }
-      ul li a {
-        color: var(--color-link);
+      .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 2px;
+        text-shadow: -5px 0 lightgreen;
+        background: black;
+        overflow: hidden;
+        top: 0;
+        animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
       }
 
-      .hi {
-        display: inline-block;
-        transform-origin: 70% 70%;
-        animation: hi 3s linear -2s infinite;
-      }
-
-      @keyframes border {
-        0% { background-position: 0 0; }
-        20% { background-position: 100% 0; }
-        40% { background-position: 100% 100%; }
-        60% { background-position: 0 100%; }
-        100% { background-position: 0 0; }
-      }
-
-      @keyframes hi {
-        25% { transform: rotate(0deg); }
-        30% { transform: rotate(15deg); }
-        35% { transform: rotate(0deg); }
-        40% { transform: rotate(15deg); }
-        45% { transform: rotate(0deg); }
-        80% { transform: rotate(0deg); }
-        85% { transform: rotate(15deg); }
-        90% { transform: rotate(0deg); }
-        95% { transform: rotate(15deg); }
-        100% { transform: rotate(0deg); }
-      }
-
-      @keyframes intro {
-        0%, 75% { transform: translateX(-100vw); }
-        100% { transform: translateX(0); }
-      }
-
-      @keyframes fade {
-        0%, 75% { opacity: 0; }
-        100% { opacity: 1; }
-      }
-
-      @media (prefers-color-scheme: light) {
-        .body {
-          --color-main: #9B5DE5;
-          --color-primary: #F15BB5;
-          --color-secondary: #00BBF9;
-          --color-link: #00BBF9;
-          --color-link-active: #F15BB5;
+      @keyframes glitch {
+        1%{
+          transform: rotateX(10deg) skewX(90deg);
+        }
+        2%{
+          transform: rotateX(0deg) skewX(0deg);
         }
       }
 
-      @media (prefers-reduced-motion) {
-        .body {
-          animation: none;
-        }
-
-        .hi {
-          animation: none;
-        }
-
-        ul li {
-          opacity: 1;
-          animation: none;
-        }
-
-        h1 a span:nth-child(1),
-        h1 a span:nth-child(2),
-        h1 a span:nth-child(3) {
-          animation: none;
+      @keyframes noise-1 {
+        $steps: 30;
+        @for $i from 1 through $steps {
+          #{percentage($i*(1/$steps))} {
+            $top: random(100);
+            $bottom: random(101 - $top);
+            clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+          }
         }
       }
+
+      @keyframes noise-2 {
+        $steps: 30;
+        @for $i from 0 through $steps {
+          #{percentage($i*(1/$steps))} {
+            $top: random(100);
+            $bottom: random(101 - $top);
+            clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+          }
+        }
+      }
+
+      .scanlines {
+        overflow: hidden;
+        mix-blend-mode: difference;
+      }
+
+      .scanlines::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        background: repeating-linear-gradient(
+          to bottom,
+          transparent 0%,
+          rgba(255, 255, 255, 0.05) .5%,
+          transparent 1%
+        );
+
+        animation: fudge 7s ease-in-out alternate infinite;
+      }
+
+
+      @keyframes fudge {
+        from {
+          transform: translate(0px, 0px);
+        }
+        to {
+          transform: translate(0px, 2%);
+        }
+      }
+
+      .glow {
+        @extend .glitch;
+        text-shadow: 0 0 1000px rgb(223, 191, 191);
+        color: transparent;
+        position: absolute;
+        top: 0;
+      }
+
+      .subtitle {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: .8vw;
+        color: rgba(165, 141, 141, .4);
+        text-transform: uppercase;
+        letter-spacing: 1em;
+        text-align: center;
+        position: absolute;
+        left: 17%;
+        animation: glitch-2 5s 5.02s infinite;
+      }
+
+      @keyframes glitch-2 {
+        1%{
+          transform: rotateX(10deg) skewX(70deg);
+        }
+        2%{
+          transform: rotateX(0deg) skewX(0deg);
+        }
+      }
+
     </style>
     <div class='body'>
-      <div class='container'>
-        <h1>
-          <a href="https://github.com/sinbad-io">
-            <span><em>Sinbad-io</em></span>
-            <span><em>Sinbad-io</em></span>
-            <span><em>Sinbad-io</em></span>
-          </a>
-        </h1>
-      </div>
+  <div class="container">
+  <div class="glitch" data-text="Sinbad-io">Sinbad-io</div>
+  <div class="glow">Sinbad-io</div>
+  </div>
+  <div class="scanlines"></div>
     </div>
   </div>
   </foreignObject>
