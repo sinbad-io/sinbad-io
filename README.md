@@ -1,5 +1,6 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
+<svg>
 <div>
 	<style>
 		body {
@@ -47,6 +48,7 @@
 		</svg>
 	</div>
 </div>
+</svg>
 
 <br/> <br/>
 
