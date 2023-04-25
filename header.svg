@@ -1,0 +1,45 @@
+<svg fill="none" viewBox="0 0 600 400" width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+  <div xmlns="http://www.w3.org/1999/xhtml">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+        svg {
+            font-family: 'Roboto';
+            width: 100%; height: 200px;
+        }
+        svg text {
+            animation: stroke 5s infinite alternate;
+            stroke-width: 2;
+            text-align: center;
+            stroke: #365fa0;
+            font-size: 130px;
+        }
+        .header {
+            height: 200px;
+            background: url(https://wearecollins.imgix.net/uploads/RH_COLLINS_Web_23-e96d6c.jpg?auto=format%2Ccompress&dpr=2&fit=max&q=90&w=1500);
+            background-size: cover;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+        }
+        @keyframes stroke {
+            0%   {
+                fill: #E5FF95; stroke: #ADE61E;
+                stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+            }
+            70%  {fill: #E5FF95; stroke: #ADE61E; }
+            80%  {fill: #E5FF95; stroke: #ADE61E; stroke-width: 3; }
+            100% {
+                fill: white; stroke: white; 
+                stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+            }
+        }
+    </style>
+		<div class="header">
+			<svg viewBox="-230 -80 1000 100"><text>Sinbad-io</text></svg>
+		</div>
+  </foreignObject>
+</svg>
