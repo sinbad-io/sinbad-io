@@ -89,12 +89,7 @@
         top: 0;
         left: 0;
 
-        background: repeating-linear-gradient(
-          to bottom,
-          transparent 0%,
-          rgba(255, 255, 255, 0.05) .5%,
-          transparent 1%
-        );
+        background-image: url("https://wearecollins.imgix.net/uploads/RH_COLLINS_Web_23-e96d6c.jpg");
 
         animation: fudge 7s ease-in-out alternate infinite;
       }
@@ -142,8 +137,8 @@
     </style>
     <div class='body'>
   <div class="container">
-  <div class="glitch" data-text="Sinbad-io">Sinbad-io</div>
-  <div class="glow">Sinbad-io</div>
+  <div class="glitch" data-text="Sinbad">Sinbad</div>
+  <div class="glow">Sinbad</div>
   </div>
   <div class="scanlines"></div>
     </div>

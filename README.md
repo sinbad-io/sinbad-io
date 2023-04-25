@@ -1,4 +1,4 @@
-<div style="width: 100%;">
+<div style="width: 100%; background: url()">
     <img src="header.svg" style="width: 100%;" />
 </div>
 <img src="https://github-readme-stats.vercel.app/api?username=sinbad-io&show_icons=true&count_private=true" align="right" />
