@@ -1,13 +1,6 @@
 <div style="width: 100%;">
-  <a href="https://github.com/nikolalsvk/nikolalsvk/blame/main/welcome.svg">
-    <img src="header.svg" style="width: 100%;" alt="Click to see the source">
-  </a>
+    <img src="header.svg" style="width: 100%;" />
 </div>
-
-<br/> <br/>
-
-# Welcome 👋
-
 <img src="https://github-readme-stats.vercel.app/api?username=sinbad-io&show_icons=true&count_private=true" align="right" />
 
 I author and maintain open source projects written in Golang. I care deeply about running, literature, phyiscs, ownership and intrastructure.
