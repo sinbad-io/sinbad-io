@@ -1,6 +1,6 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
-<svg>
+<foreignObject>
 <div>
 	<style>
 		body {
@@ -48,7 +48,7 @@
 		</svg>
 	</div>
 </div>
-</svg>
+</foreignObject>
 
 <br/> <br/>
 
