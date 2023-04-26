@@ -4,4 +4,4 @@
 
 I author and maintain open source projects written in Golang. I care deeply about running, literature, phyiscs, ownership and intrastructure.
 
-In 2022 I co-founded Nuntio, a Dasnish software company building an open-source backend and deployment platform on Kubernetes, providing the ease-of-use of traditional platforms like Firebase, with the flexibility and complexity provided by Kubernetes.
+In 2022 I co-founded Nuntio, a Dasnish software company building an open-source backend and deployment platform on Kubernetes, providing the ease-of-use of traditional platforms like Firebase, with the flexibility and complexity offered by Kubernetes.
