@@ -2,13 +2,10 @@
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" />
     <defs>
         <style type="text/css">
-        body {
-          background: #e3f2fd
-        }
-
         svg {
           font-family: 'Russo One', sans-serif;
           position: absolute; 
+          background: #e3f2fd;
           width: 100%; height: 100%;
         }
         svg text {
