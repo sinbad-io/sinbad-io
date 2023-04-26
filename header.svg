@@ -1,60 +1,35 @@
 <svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" />
     <defs>
         <style type="text/css">
-            html, body{
-                height: 100%;
-                font-weight: 800;
-            }
+        body {
+          background: #e3f2fd
+        }
 
-            svg {
-                font-family: Helvetica, sans-serif;
-            }
-
-            svg {
-                display: block;
-                font: 10.5em 'Helvetica';
-                width: 960px;
-                height: 300px;
-                margin: 0 auto;
-            }
-
-            .text-copy {
-                fill: none;
-                stroke: #E4F3D7;
-                stroke-dasharray: 6% 29%;
-                stroke-width: 5px;
-                stroke-dashoffset: 0%;
-                animation: stroke-offset 5.5s infinite linear;
-            }
-
-            .text-copy:nth-child(1){
-                stroke: #E4F3D7;
-                animation-delay: -1;
-            }
-
-            .text-copy:nth-child(2){
-                stroke: #D0F992;
-                animation-delay: -2s;
-            }
-
-            .text-copy:nth-child(3){
-                stroke: #D0F992;
-                animation-delay: -3s;
-            }
-
-            .text-copy:nth-child(4){
-                stroke: #C8F0D2;
-                animation-delay: -4s;
-            }
-
-            .text-copy:nth-child(5){
-                stroke: #C8F0D2;
-                animation-delay: -5s;
-            }
-
-            @keyframes stroke-offset{
-                100% {stroke-dashoffset: -35%;}
-            }
+        svg {
+          font-family: 'Russo One', sans-serif;
+          position: absolute; 
+          width: 100%; height: 100%;
+        }
+        svg text {
+          text-transform: uppercase;
+          animation: stroke 5s infinite alternate;
+          stroke-width: 2;
+          stroke: #000000;
+          font-size: 140px;
+        }
+        @keyframes stroke {
+          0%   {
+            fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+            stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+          }
+          70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
+          80%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+          100% {
+            fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); 
+            stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+          }
+        }
         </style>
     </defs>
 
