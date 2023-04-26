@@ -1,47 +1,72 @@
-<svg fill="none" viewBox="0 0 600 400" width="600" height="200" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet" />
-      <style>
-        .body {
-          font-family: "Oswald", sans-serif;
-          font-style: italic;
-        }
-        .container {
-          position: absolute;
-          transform: translate(-50%, -20%);
-          top: 40%;
-          left: 50%;
-        }
-        svg {
-        	font-family: 'Russo One', sans-serif;
-          width: 100%; height: 200px;
-          }
-        svg text {
-          animation: stroke 5s infinite alternate;
-          stroke-width: 2;
-          text-align: center;
-          stroke: #365fa0;
-          font-size: 110px;
-        }
-        @keyframes stroke {
-            0%   {
-                fill: #E5FF95; stroke: #ADE61E;
-                stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+<svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <style type="text/css">
+            html, body{
+                height: 100%;
+                font-weight: 800;
             }
-            70%  {fill: #E5FF95; stroke: #ADE61E; }
-            80%  {fill: #E5FF95; stroke: #ADE61E; stroke-width: 3; }
-            100% {
-                fill: white; stroke: white; 
-                stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+
+            svg {
+                font-family: Helvetica, sans-serif;
             }
-        }
-      </style>
-    <div class='body'>
-      <div class="container">
-        <svg viewBox="-230 -80 1000 100"><text >Sinbad</text></svg>
-      </div>
-    </div>
-    </div>
-  </foreignObject>
+
+            svg {
+                display: block;
+                font: 10.5em 'Helvetica';
+                width: 960px;
+                height: 300px;
+                margin: 0 auto;
+            }
+
+            .text-copy {
+                fill: none;
+                stroke: #ABEAFC;
+                stroke-dasharray: 6% 29%;
+                stroke-width: 5px;
+                stroke-dashoffset: 0%;
+                animation: stroke-offset 5.5s infinite linear;
+            }
+
+            .text-copy:nth-child(1){
+                stroke: #ABEAFC;
+                animation-delay: -1;
+            }
+
+            .text-copy:nth-child(2){
+                stroke: #006CFD;
+                animation-delay: -2s;
+            }
+
+            .text-copy:nth-child(3){
+                stroke: #006CFD;
+                animation-delay: -3s;
+            }
+
+            .text-copy:nth-child(4){
+                stroke: #00B8FF;
+                animation-delay: -4s;
+            }
+
+            .text-copy:nth-child(5){
+                stroke: #00B8FF;
+                animation-delay: -5s;
+            }
+
+            @keyframes stroke-offset{
+                100% {stroke-dashoffset: -35%;}
+            }
+        </style>
+    </defs>
+
+    <symbol id="s-text">
+        <text text-anchor="middle" x="50%" y="80%">Sinbad-io</text>
+    </symbol>
+
+    <g class = "g-ants">
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
 </svg>
