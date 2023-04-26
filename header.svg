@@ -20,7 +20,7 @@
 
             .text-copy {
                 fill: none;
-                stroke: #ABEAFC;
+                stroke: #E4F3D7;
                 stroke-dasharray: 6% 29%;
                 stroke-width: 5px;
                 stroke-dashoffset: 0%;
@@ -28,27 +28,27 @@
             }
 
             .text-copy:nth-child(1){
-                stroke: #ABEAFC;
+                stroke: #E4F3D7;
                 animation-delay: -1;
             }
 
             .text-copy:nth-child(2){
-                stroke: #006CFD;
+                stroke: #D0F992;
                 animation-delay: -2s;
             }
 
             .text-copy:nth-child(3){
-                stroke: #006CFD;
+                stroke: #D0F992;
                 animation-delay: -3s;
             }
 
             .text-copy:nth-child(4){
-                stroke: #00B8FF;
+                stroke: #C8F0D2;
                 animation-delay: -4s;
             }
 
             .text-copy:nth-child(5){
-                stroke: #00B8FF;
+                stroke: #C8F0D2;
                 animation-delay: -5s;
             }
 
