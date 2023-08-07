@@ -43,7 +43,7 @@
             }
 
             .text-copy:nth-child(4){
-                stroke: #F7CD3E;
+                stroke: #e4e9ed;
                 animation-delay: -4s;
             }
 
