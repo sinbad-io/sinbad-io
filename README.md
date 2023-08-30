@@ -1,6 +1,6 @@
 ![SIBBAD-IO](header.svg)
 
-My hacker name, Sinbad-io, is from my favorite character in The Count of Monte Cristo. 
+My hacker name (Sinbad) is from my favorite character in The Count of Monte Cristo. 
 
 My real name is Oscar A. B. Orellana and I design, author and maintain open source projects, primarily written in Golang.
 
